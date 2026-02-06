@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Le Club d'Oenologie - Découvrez l'art de la dégustation et les grands vins.">
+    <title>Le Club d'Oenologie | Oeno-Axel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header id="navbar">
+        <div class="container">
+            <div class="logo">Oeno-Axel</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#hero">Accueil</a></li>
+                    <li><a href="#about">Notre Philosophie</a></li>
+                    <li><a href="#events">Dégustations</a></li>
+                    <li><a href="#contact" class="btn-primary">Rejoindre</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>L'Art de la Dégustation</h1>
+            <p>Rejoignez un cercle de passionnés pour explorer les terroirs d'exception.</p>
+            <a href="#events" class="btn-outline">Nos Prochains Événements</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>Notre Philosophie</h2>
+                <div class="separator"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Oeno-Axel est bien plus qu'un club de dégustation. C'est une invitation au voyage à travers les vignobles les plus prestigieux et les pépites méconnues.</p>
+                    <p>Nous croyons que le vin est une histoire qui se partage. Nos séances sont conçues pour allier apprentissage technique et convivialité, guidées par des experts sommeliers.</p>
+                </div>
+                <div class="about-features">
+                    <div class="feature-card">
+                        <h3>Terroir</h3>
+                        <p>Une sélection rigoureuse respectant l'authenticité.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Partage</h3>
+                        <p>Des moments d'échange et de convivialité.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Excellence</h3>
+                        <p>Des grands crus aux découvertes confidentielles.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events">
+        <div class="container">
+            <div class="section-title">
+                <h2>Prochaines Dégustations</h2>
+                <div class="separator"></div>
+            </div>
+            <div class="events-grid">
+                <div class="event-card">
+                    <div class="event-date">15 Mars</div>
+                    <h3>Les Grands Rouges de Bourgogne</h3>
+                    <p>Une verticale exceptionnelle pour découvrir les nuances du Pinot Noir.</p>
+                    <a href="#" class="btn-text">Réserver &rarr;</a>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">02 Avril</div>
+                    <h3>Tour de France des Blancs</h3>
+                    <p>De l'Alsace à la Loire, explorez la fraîcheur et la minéralité.</p>
+                    <a href="#" class="btn-text">Réserver &rarr;</a>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">20 Mai</div>
+                    <h3>Soirée Accords Mets & Vins</h3>
+                    <p>Un dîner gastronomique sublimé par une sélection de notre cave.</p>
+                    <a href="#" class="btn-text">Réserver &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="contact-box">
+                <h2>Devenez Membre</h2>
+                <p>Recevez nos invitations exclusives et accédez à nos ventes privées.</p>
+                <form class="contact-form" onsubmit="event.preventDefault(); alert('Merci de votre intérêt ! Ceci est une démo.');">
+                    <input type="email" placeholder="Votre adresse email" required>
+                    <button type="submit" class="btn-primary">S'inscrire</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Oeno-Axel</h4>
+                    <p>Club d'oenologie à Paris.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Liens</h4>
+                    <ul>
+                        <li><a href="#hero">Accueil</a></li>
+                        <li><a href="#about">Philosophie</a></li>
+                        <li><a href="#events">Événements</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>contact@oeno-axel.fr</p>
+                    <div class="socials">
+                        <!-- Icons placeholder -->
+                        <span>Insta</span>
+                        <span>Fb</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Oeno-Axel. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

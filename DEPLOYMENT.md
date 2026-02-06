@@ -21,7 +21,7 @@ C'est la méthode "pro". À chaque fois que vous modifiez votre code sur votre o
 
 ### Étape A : Mettre le code sur GitHub
 1.  Créez un compte sur [github.com](https://github.com).
-2.  Créez un "New Repository" (Nouveau dépôt). Donnez-lui un nom (ex: `oeno-axel-site`).
+2.  Créez un "New Repository" (Nouveau dépôt). Donnez-lui un nom (ex: `Oeno-ENPC-site`).
 3.  Sur votre ordinateur, ouvrez le terminal dans le dossier de votre projet.
 4.  Tapez les commandes suivantes (GitHub vous les donne aussi) :
     ```bash
@@ -29,14 +29,14 @@ C'est la méthode "pro". À chaque fois que vous modifiez votre code sur votre o
     git add .
     git commit -m "Premier commit"
     git branch -M main
-    git remote add origin https://github.com/VOTRE_NOM_UTILISATEUR/oeno-axel-site.git
+    git remote add origin https://github.com/VOTRE_NOM_UTILISATEUR/Oeno-ENPC-site.git
     git push -u origin main
     ```
 
 ### Étape B : Connecter à Vercel
 1.  Allez sur [vercel.com](https://vercel.com) et créez un compte (connectez-vous avec GitHub, c'est plus simple).
 2.  Cliquez sur "Add New..." -> "Project".
-3.  Vous verrez votre projet `oeno-axel-site` dans la liste (import from GitHub). Cliquez sur "Import".
+3.  Vous verrez votre projet `Oeno-ENPC-site` dans la liste (import from GitHub). Cliquez sur "Import".
 4.  Cliquez sur "Deploy".
 5.  Attendez une minute. Vercel va vous donner une URL finale.
 
@@ -54,6 +54,35 @@ Si vous ne voulez pas utiliser Vercel ou Netlify.
 5.  Sous "Branch", choisissez `main` et `/root`, puis "Save".
 6.  Attendez quelques minutes, GitHub vous donnera le lien de votre site.
 
+
+---
+
+## Comparatif : Méthode 2 (Vercel/Netlify) vs Méthode 3 (GitHub Pages)
+
+Vous hésitez ? Voici les pour et les contre.
+
+### Vercel / Netlify (Méthode 2)
+✅ **Les Plus :**
+*   **Performance :** Souvent plus rapide (CDN mondial optimisé).
+*   **Fonctionnalités :** Permet d'ajouter plus tard du code "backend" (choses complexes) si vous évoluez.
+*   **Aperçus :** Si vous travaillez en équipe, ils créent un "site de tes" pour chaque modification avant de la valider.
+*   **Mise en place :** Extrêmement simple à connecter avec GitHub.
+
+❌ **Les Moins :**
+*   C'est un service tiers (en plus de GitHub).
+
+### GitHub Pages (Méthode 3)
+✅ **Les Plus :**
+*   **Tout-en-un :** Tout reste sur GitHub, pas de nouveau compte à créer ailleurs.
+*   **Gratuit :** Comme les autres, mais intégré à votre "stockage" de code.
+
+❌ **Les Moins :**
+*   **Plus lent à mettre à jour :** Quand vous modifiez le code, le site peut mettre 1 à 2 minutes à se rafraîchir (Vercel est quasi instantané).
+*   **Limité :** Convient parfaitement pour ce site "vitrine", mais sera bloquant si vous voulez créer une boutique ou un espace membre complexe plus tard.
+*   **Configuration :** Parfois un peu plus capricieux sur la gestion des domaines personnalisés ou des redirections.
+
+👉 **Mon conseil** : Commencez par **Vercel ou Netlify**. C'est le standard moderne, plus rapide et plus flexible pour l'avenir.
+
 ---
 
 ## Résumé
@@ -63,18 +92,18 @@ Si vous ne voulez pas utiliser Vercel ou Netlify.
 ---
 
 ## Méthode Bonus : Avoir votre propre nom de domaine
-Par défaut, votre site aura une adresse en `.netlify.app` ou `.vercel.app`. Pour avoir une adresse pro comme `www.oeno-axel.fr` (ou `.com`), suivez ces étapes :
+Par défaut, votre site aura une adresse en `.netlify.app` ou `.vercel.app`. Pour avoir une adresse pro comme `www.Oeno-ENPC.fr` (ou `.com`), suivez ces étapes :
 
 ### 1. Acheter le nom de domaine
 Vous devez acheter le nom. C'est comme louer l'adresse de votre maison sur internet. Cela coûte environ 10-15€ par an.
 - Allez chez un "registrar" comme **OVH** (très bien pour les `.fr`), **Gandi**, ou **Namecheap**.
-- Cherchez votre nom (ex: `oeno-axel`) et achetez-le.
+- Cherchez votre nom (ex: `Oeno-ENPC`) et achetez-le.
 
 ### 2. Connecter le domaine à votre site
 Si vous utilisez **Vercel** ou **Netlify** (Méthode 2) :
 1.  Allez dans les paramètres de votre projet sur Vercel/Netlify ("Settings").
 2.  Allez dans l'onglet **Domains**.
-3.  Entrez votre domaine (ex: `www.oeno-axel.fr`) et cliquez sur "Add".
+3.  Entrez votre domaine (ex: `www.Oeno-ENPC.fr`) et cliquez sur "Add".
 4.  Vercel/Netlify va vous donner des instructions techniques ("DNS Records").
     - Souvent, il faut ajouter un "CNAME" ou un "A Record".
 5.  Retournez sur le site où vous avez acheté le domaine (OVH, Gandi...) dans la zone "DNS".

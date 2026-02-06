@@ -1,9 +1,12 @@
 /* Global Styles */
 :root {
-    --primary-color: #5D1022; /* Deep Burgundy */
-    --secondary-color: #BFA15F; /* Gold */
+    --primary-color: #5D1022;
+    /* Deep Burgundy */
+    --secondary-color: #BFA15F;
+    /* Gold */
     --text-color: #F4F4F4;
-    --background-color: #121212; /* Very Dark Grey */
+    --background-color: #121212;
+    /* Very Dark Grey */
     --surface-color: #1E1E1E;
     --font-heading: 'Playfair Display', serif;
     --font-body: 'Lato', sans-serif;
@@ -36,7 +39,10 @@ ul {
     list-style: none;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: var(--font-heading);
     font-weight: 700;
 }
@@ -103,12 +109,12 @@ h1, h2, h3, h4 {
     padding: 1.5rem 0;
     z-index: 1000;
     transition: background-color 0.3s ease;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.8), transparent);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent);
 }
 
 #navbar.scrolled {
     background-color: var(--background-color);
-    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     padding: 1rem 0;
 }
 
@@ -204,8 +210,15 @@ h1, h2, h3, h4 {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* About Section */
@@ -282,7 +295,7 @@ h1, h2, h3, h4 {
     padding: 2rem;
     border-radius: 4px;
     transition: transform 0.3s ease;
-    border: 1px solid rgba(255,255,255,0.05);
+    border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .event-card:hover {
@@ -314,7 +327,7 @@ h1, h2, h3, h4 {
 #contact {
     padding: var(--spacing-lg) 0;
     text-align: center;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?q=80&w=2670&auto=format&fit=crop') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?q=80&w=2670&auto=format&fit=crop') no-repeat center center/cover;
     background-attachment: fixed;
 }
 
@@ -360,7 +373,7 @@ h1, h2, h3, h4 {
 footer {
     background-color: #0d0d0d;
     padding: 4rem 0 2rem 0;
-    border-top: 1px solid rgba(255,255,255,0.05);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .footer-grid {
@@ -376,7 +389,8 @@ footer {
     font-size: 1.1rem;
 }
 
-.footer-col p, .footer-col ul li a {
+.footer-col p,
+.footer-col ul li a {
     color: #888;
     font-size: 0.9rem;
     margin-bottom: 0.8rem;
@@ -390,12 +404,179 @@ footer {
 .footer-bottom {
     text-align: center;
     padding-top: 2rem;
-    border-top: 1px solid rgba(255,255,255,0.05);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .footer-bottom p {
     color: #555;
     font-size: 0.8rem;
+}
+
+
+/* Next Tasting Section */
+.next-tasting-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1596561570183-b7b5107f9c9b?q=80&w=2670&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    padding: 6rem 0;
+    text-align: center;
+    margin-bottom: 4rem;
+    border-radius: 8px;
+    border: 1px solid var(--secondary-color);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.next-tasting-hero h2 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.next-tasting-hero .subtitle {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+    font-weight: 300;
+}
+
+.next-tasting-details {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 2rem;
+    color: #ddd;
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.detail-item span.label {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+    opacity: 0.7;
+}
+
+.detail-item span.value {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* Past Tastings Section */
+.past-tastings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.past-tasting-card {
+    background-color: var(--surface-color);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.past-tasting-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-color: var(--secondary-color);
+}
+
+.card-image {
+    height: 200px;
+    background-color: #333;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card-content .date {
+    color: var(--secondary-color);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.card-content h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.card-content p {
+    color: #aaa;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Page Specific: Tasting Details */
+.tasting-header {
+    height: 60vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.tasting-intro {
+    padding: 4rem 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.start-quote {
+    font-size: 1.5rem;
+    font-style: italic;
+    text-align: center;
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+    font-family: var(--font-heading);
+}
+
+.wines-list {
+    background-color: var(--surface-color);
+    padding: 3rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+.wines-list h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--secondary-color);
+}
+
+.wine-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.wine-item:last-child {
+    border-bottom: none;
+}
+
+.wine-name {
+    font-weight: 700;
+}
+
+.wine-vintage {
+    color: #888;
 }
 
 /* Mobile Responsiveness */
@@ -411,7 +592,7 @@ footer {
         justify-content: center;
         transform: translateX(100%);
         transition: transform 0.3s ease;
-        box-shadow: -5px 0 15px rgba(0,0,0,0.5);
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
     }
 
     .nav-links.active {

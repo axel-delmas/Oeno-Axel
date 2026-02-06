@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détails de la Dégustation | Oeno-ENPC</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Reuse Navbar -->
+    <header id="navbar">
+        <div class="container">
+            <div class="logo"><a href="index.html">Oeno-ENPC</a></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Retour à l'Accueil</a></li>
+                    <li><a href="index.html#events">Agenda</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Specific Hero -->
+    <section class="tasting-header"
+        style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('URL_IMAGE_VIGNERON_ICI');">
+        <div class="container">
+            <h1 style="font-size: 3.5rem; margin-bottom: 2rem;">NOM DE LA DÉGUSTATION</h1>
+            <p
+                style="font-size: 1.2rem; color: var(--secondary-color); text-transform: uppercase; letter-spacing: 2px;">
+                DATE ICI</p>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section class="tasting-content">
+        <div class="container tasting-intro">
+            <p class="start-quote">"Une citation marquante du vigneron ou un résumé de l'esprit de la soirée."</p>
+
+            <p>Ici, racontez l'histoire de la soirée. Qui était le vigneron invité ? Quelle est l'histoire du domaine ?
+                Comment s'est déroulée la présentation ?</p>
+            <p>Ajoutez des détails sur le terroir, la philosophie de vinification, etc.</p>
+
+            <div class="wines-list">
+                <h3>Les Vins Dégustés</h3>
+
+                <!-- Wine 1 -->
+                <div class="wine-item">
+                    <span class="wine-name">Nom du Vin 1</span>
+                    <span class="wine-vintage">2018</span>
+                </div>
+                <!-- Wine 2 -->
+                <div class="wine-item">
+                    <span class="wine-name">Nom du Vin 2 - Premier Cru</span>
+                    <span class="wine-vintage">2015</span>
+                </div>
+                <!-- Wine 3 -->
+                <div class="wine-item">
+                    <span class="wine-name">Nom du Vin 3 - Grand Cru</span>
+                    <span class="wine-vintage">2010</span>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 4rem;">
+                <a href="index.html#past-tastings" class="btn-outline">Voir les autres dégustations</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container" style="text-align: center;">
+            <p>&copy; 2024 Oeno-ENPC. Club d'oenologie.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

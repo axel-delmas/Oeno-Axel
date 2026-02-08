@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Le Club d'Oenologie - Découvrez l'art de la dégustation et les grands vins.">
-    <title>Le Club d'Oenologie | Oeno-ENPC</title>
+    <title>Oenologie Ponts et Chaussées</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -19,13 +19,18 @@
     <!-- Navigation -->
     <header id="navbar">
         <div class="container">
-            <div class="logo">Oeno-ENPC</div>
+            <div class="logo">
+                <img src="logo_enpc.png" alt="Logo" class="logo-img">
+                L'Épontcurien
+            </div>
+  
             <nav>
                 <ul class="nav-links">
                     <li><a href="#hero">Accueil</a></li>
-                    <li><a href="#about">Notre Philosophie</a></li>
-                    <li><a href="#events">Dégustations</a></li>
-                    <li><a href="#contact" class="btn-primary">Rejoindre</a></li>
+                    <li><a href="planning.html">Planning 2025-2026</a></li>
+                    <li><a href="archives.html">Archives</a></li>
+                    <li><a href="membres.html">Membres</a></li>
+                    <li><a href="contact.html" class="btn-primary">Contact</a></li>
                 </ul>
                 <div class="hamburger">
                     <span></span>
@@ -40,121 +45,65 @@
     <section id="hero">
         <div class="next-tasting-hero">
             <div class="container">
-                <p class="subtitle">Prochaine Dégustation - Jeudi 12 Mars</p>
-                <h2>Domaine de la Grange des Pères</h2>
-                <div class="next-tasting-details">
-                    <div class="detail-item">
-                        <span class="label">Région</span>
-                        <span class="value">Languedoc</span>
-                    </div>
-                    <div class="detail-item">
-                        <span class="label">Vigneron</span>
-                        <span class="value">Invité d'Honneur</span>
-                    </div>
-                </div>
-                <a href="#register" class="btn-primary"
-                    onclick="alert('Inscription via le lien Google Forms du club !')">S'inscrire</a>
+                <h2>Club d'Oenologie des Ponts et Chaussées</h2>
+                
+                
             </div>
         </div>
     </section>
 
     <!-- Past Tastings Section -->
-    <section id="past-tastings">
-        <div class="container">
-            <div class="section-title">
-                <h2>Nos Dernières Dégustations</h2>
-                <div class="separator"></div>
-                <p style="text-align: center; color: #aaa; margin-top: 1rem;">Retour sur les moments forts du club.</p>
-            </div>
-
-            <div class="past-tastings-grid">
-                <!-- Card 1 -->
-                <div class="past-tasting-card">
-                    <div class="card-image"
-                        style="background-image: url('https://images.unsplash.com/photo-1596561570183-b7b5107f9c9b?q=80&w=2670&auto=format&fit=crop');">
-                    </div>
-                    <div class="card-content">
-                        <span class="date">Février 2024</span>
-                        <h3>Château Margaux</h3>
-                        <p>Une soirée inoubliable avec Aurélien Valance pour découvrir l'élégance du Premier Grand Cru
-                            Classé.</p>
-                        <a href="degustation-example.html" class="btn-text">Lire le compte-rendu &rarr;</a>
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="past-tasting-card">
-                    <div class="card-image"
-                        style="background-image: url('https://images.unsplash.com/photo-1570412852737-234b41304918?q=80&w=2574&auto=format&fit=crop');">
-                    </div>
-                    <div class="card-content">
-                        <span class="date">Janvier 2024</span>
-                        <h3>Champagne Egly-Ouriet</h3>
-                        <p>Exploration des terroirs d'Ambonnay avec Francis Egly. Puissance et vinosité.</p>
-                        <a href="#" class="btn-text">Lire le compte-rendu &rarr;</a>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="past-tasting-card">
-                    <div class="card-image"
-                        style="background-image: url('https://images.unsplash.com/photo-1528823872057-9c0182e68c43?q=80&w=2574&auto=format&fit=crop');">
-                    </div>
-                    <div class="card-content">
-                        <span class="date">Décembre 2023</span>
-                        <h3>Soirée de Noël : Vins Jaunes</h3>
-                        <p>Dégustation à l'aveugle des plus grands Châteaux-Chalon. Un défi pour les sens.</p>
-                        <a href="#" class="btn-text">Lire le compte-rendu &rarr;</a>
-                    </div>
-                </div>
-            </div>
+    <section id="about-club">
+    <div class="container">
+        <div class="section-title">
+            <h2>À Propos du Club</h2>
+            <div class="separator"></div>
         </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <div class="contact-box">
-                <h2>Devenez Membre</h2>
-                <p>Recevez nos invitations exclusives et accédez à nos ventes privées.</p>
-                <form class="contact-form"
-                    onsubmit="event.preventDefault(); alert('Merci de votre intérêt ! Ceci est une démo.');">
-                    <input type="email" placeholder="Votre adresse email" required>
-                    <button type="submit" class="btn-primary">S'inscrire</button>
-                </form>
-            </div>
+        <div class="club-description">
+            <p>
+                Bienvenue au <strong>Club d'Oenologie des Ponts et Chaussées</strong>, un club étudiant dédié à la dégustation et à la découverte des grands vins.
+                Fondé par des étudiants et des alumni de l'École Nationale des Ponts et Chaussées, notre club rassemble des élèves en cours de scolarité les jeudi à 18hpour explorer les richesses du monde du vin.
+            </p>
+            <p>
+                Notre mission est de promouvoir la culture du vin à travers des dégustations, des rencontres avec des vignerons renommés.
+                Plusieurs fois par mois, nous organisons des événements où les domaines présentent leurs vins et leur caractéristiques..
+            </p>
+            
+            <p>
+                Si vous êtes intéressés pour venir animer une séance chez nous, n'hésitez pas à nous contacter ou à consulter notre planning pour l'année <strong>2025-2026</strong>.
+            </p>
         </div>
-    </section>
+    </div>
+</section>
+
+
 
     <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-col">
-                    <h4>Oeno-ENPC</h4>
-                    <p>Club d'oenologie à Paris.</p>
-                </div>
+                
                 <div class="footer-col">
                     <h4>Liens</h4>
                     <ul>
                         <li><a href="#hero">Accueil</a></li>
-                        <li><a href="#about">Philosophie</a></li>
-                        <li><a href="#events">Événements</a></li>
+                        <li><a href="planning.html">Planning année 2025-2026</a></li>
+                        <li><a href="archives.html">Archives</a></li>
+                        <li><a href="membres.html">Les membres du Club</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Contact</h4>
-                    <p>contact@Oeno-ENPC.fr</p>
-                    <div class="socials">
-                        <!-- Icons placeholder -->
-                        <span>Insta</span>
-                        <span>Fb</span>
-                    </div>
+                    <h4>Contacts et Réseaux</h4>
+                    <ul>
+                        <li><a>axel.delmas@eleves.enpc.fr</a></li>
+                        <li><a>06 17 14 05 65</a></li>
+                        <li><a href="https://www.linkedin.com/posts/oenologie-enpc_lepontcurien-le-club-d%C5%93nologie-de-l%C3%A9cole-activity-7343743823220473857-wJYO/?originalSubdomain=fr">LinkedIn</a></li>
+                        <li><a href="https://www.instagram.com/epontcurien_enpc/">Instagram</a></li>
+                    </ul>
                 </div>
+                
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Oeno-ENPC. Tous droits réservés.</p>
-            </div>
+            
         </div>
     </footer>
 

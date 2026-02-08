@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archives - Oenologie Ponts et Chaussées</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .wine-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .wine-item:hover {
+            background-color: rgba(191, 161, 95, 0.2);
+            border-left: 4px solid var(--secondary-color);
+            padding-left: 0.8rem;
+        }
+
+        .wine-item a {
+            display: block;
+            width: 100%;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .wine-name {
+            font-weight: 700;
+            flex: 1;
+        }
+
+        .wine-vintage {
+            color: #888;
+            margin-left: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="logo_enpc.png" alt="Logo" class="logo-img">
+                L'Épontcurien
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Retour à l'Accueil</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="tasting-content">
+        <div class="container tasting-intro">
+            <p class="start-quote">Historique des dégustations passées</p>
+
+            <div class="wines-list">
+                <a href="./seances/lagrange.html" class="wine-item-link">
+                    <div class="wine-item">
+                        <span class="wine-name">Château Lagrange</span>
+                        <span class="wine-vintage">29/01/2026</span>
+                    </div>
+                </a>
+                <a href="./seances/roederer.html" class="wine-item-link">
+                    <div class="wine-item">
+                        <span class="wine-name">Champagne Louis Roederer</span>
+                        <span class="wine-vintage">22/01/2026</span>
+                    </div>
+                </a>
+                <a href="./seances/gonet.html" class="wine-item-link">
+                    <div class="wine-item">
+                        <span class="wine-name">Champagne Philippe Gonet</span>
+                        <span class="wine-vintage">08/01/2026</span>
+                    </div>
+                </a>
+                <a href="./seances/jaboulet.html" class="wine-item-link">
+                    <div class="wine-item">
+                        <span class="wine-name">Domaine Paul Jaboulet Aîné</span>
+                        <span class="wine-vintage">04/12/2025</span>
+                    </div>
+                </a>
+                <a href="./seances/huet.html" class="wine-item-link">
+                    <div class="wine-item">
+                        <span class="wine-name">Domaine Huet</span>
+                        <span class="wine-vintage">27/11/2025</span>
+                    </div>
+                </a>
+                <a href="./seances/drappier.html" class="wine-item-link">
+                    <div class="wine-item">
+                        <span class="wine-name">Champagne Drappier</span>
+                        <span class="wine-vintage">13/11/2025</span>
+                    </div>
+                </a>
+                <a href="./seances/laubade.html" class="wine-item-link">
+                    <div class="wine-item">
+                        <span class="wine-name">Château de Laubade</span>
+                        <span class="wine-vintage">23/10/2025</span>
+                    </div>
+                </a>
+                <a href="./seances/sucres.html" class="wine-item-link">
+                    <div class="wine-item">
+                        <span class="wine-name">Séance vins sucrés</span>
+                        <span class="wine-vintage">16/10/2025</span>
+                    </div>
+                </a>
+                <a href="./seances/ferrando.html" class="wine-item-link">
+                    <div class="wine-item">
+                        <span class="wine-name">Domaine Famille Ferrando</span>
+                        <span class="wine-vintage">09/10/2025</span>
+                    </div>
+                </a>
+                <a href="./seances/chaize.html" class="wine-item-link">
+                    <div class="wine-item">
+                        <span class="wine-name">Château de la Chaize</span>
+                        <span class="wine-vintage">02/10/2025</span>
+                    </div>
+                </a>
+                <a href="./seances/bordeaux.html" class="wine-item-link">
+                    <div class="wine-item">
+                        <span class="wine-name">École des vins de Bordeaux</span>
+                        <span class="wine-vintage">25/09/2025</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Liens</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="planning.html">Planning année 2025-2026</a></li>
+                        <li><a href="archives.html">Archives</a></li>
+                        <li><a href="membres.html">Les membres du Club</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contacts et Réseaux</h4>
+                    <ul>
+                        <li><a>axel.delmas@eleves.enpc.fr</a></li>
+                        <li><a>06 17 14 05 65</a></li>
+                        <li><a href="https://www.linkedin.com/posts/oenologie-enpc_lepontcurien-le-club-d%C5%93nologie-de-l%C3%A9cole-activity-7343743823220473857-wJYO/?originalSubdomain=fr">LinkedIn</a></li>
+                        <li><a href="https://www.instagram.com/epontcurien_enpc/">Instagram</a></li>
+                    </ul>
+                </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

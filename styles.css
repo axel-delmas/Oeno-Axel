@@ -907,7 +907,7 @@ a.pager-next:hover .pager-name {
 .member-image {
     height: 200px;
     background-size: cover;
-    background-position: center;
+    background-position: center 25%;
 }
 
 .member-info {
@@ -959,3 +959,14 @@ a.pager-next:hover .pager-name {
     display: block;
 }
 
+
+.member-initials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #5a1424, #2a0a12);
+    color: var(--secondary-color);
+    font-family: var(--font-heading);
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+}

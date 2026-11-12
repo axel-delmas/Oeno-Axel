@@ -19,24 +19,23 @@
     <!-- Navigation -->
     <header id="navbar">
         <div class="container">
-            <div class="logo">
-                <img src="logo_enpc.png" alt="Logo" class="logo-img">
+            <a href="index.html" class="logo" aria-label="L'Épontcurien - Accueil">
+                <img src="logo_enpc.png" alt="" class="logo-img">
                 L'Épontcurien
-            </div>
-  
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#hero">Accueil</a></li>
+            </a>
+            <nav aria-label="Navigation principale">
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html" aria-current="page">Accueil</a></li>
                     <li><a href="planning.html">Planning 2025-2026</a></li>
                     <li><a href="archives.html">Archives</a></li>
                     <li><a href="membres.html">Membres</a></li>
                     <li><a href="contact.html" class="btn-primary">Contact</a></li>
                 </ul>
-                <div class="hamburger">
+                <button type="button" class="hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-links">
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
+                </button>
             </nav>
         </div>
     </header>
@@ -46,8 +45,11 @@
         <div class="next-tasting-hero">
             <div class="container">
                 <h2>Club d'Oenologie des Ponts et Chaussées</h2>
-                
-                
+                <p class="subtitle">Dégustations tous les jeudis à 18h</p>
+                <div class="hero-actions">
+                    <a href="planning.html" class="btn-primary">Voir le planning</a>
+                    <a href="archives.html" class="btn-outline">Séances passées</a>
+                </div>
             </div>
         </div>
     </section>
@@ -62,15 +64,15 @@
         <div class="club-description">
             <p>
                 Bienvenue au <strong>Club d'Oenologie des Ponts et Chaussées</strong>, un club étudiant dédié à la dégustation et à la découverte des grands vins.
-                Fondé par des étudiants et des alumni de l'École Nationale des Ponts et Chaussées, notre club rassemble des élèves en cours de scolarité les jeudi à 18hpour explorer les richesses du monde du vin.
+                Fondé par des étudiants et des alumni de l'École Nationale des Ponts et Chaussées, notre club rassemble des élèves en cours de scolarité les jeudis à 18h pour explorer les richesses du monde du vin.
             </p>
             <p>
                 Notre mission est de promouvoir la culture du vin à travers des dégustations, des rencontres avec des vignerons renommés.
-                Plusieurs fois par mois, nous organisons des événements où les domaines présentent leurs vins et leur caractéristiques..
+                Plusieurs fois par mois, nous organisons des événements où les domaines présentent leurs vins et leurs caractéristiques.
             </p>
-            
+
             <p>
-                Si vous êtes intéressés pour venir animer une séance chez nous, n'hésitez pas à nous contacter ou à consulter notre planning pour l'année <strong>2025-2026</strong>.
+                Si vous êtes intéressés pour venir animer une séance chez nous, n'hésitez pas à <a href="contact.html">nous contacter</a> ou à consulter <a href="planning.html">notre planning</a> pour l'année <strong>2025-2026</strong>.
             </p>
         </div>
     </div>
@@ -82,11 +84,10 @@
     <footer>
         <div class="container">
             <div class="footer-grid">
-                
                 <div class="footer-col">
                     <h4>Liens</h4>
                     <ul>
-                        <li><a href="#hero">Accueil</a></li>
+                        <li><a href="index.html">Accueil</a></li>
                         <li><a href="planning.html">Planning année 2025-2026</a></li>
                         <li><a href="archives.html">Archives</a></li>
                         <li><a href="membres.html">Les membres du Club</a></li>
@@ -95,15 +96,13 @@
                 <div class="footer-col">
                     <h4>Contacts et Réseaux</h4>
                     <ul>
-                        <li><a>axel.delmas@eleves.enpc.fr</a></li>
-                        <li><a>06 17 14 05 65</a></li>
-                        <li><a href="https://www.linkedin.com/posts/oenologie-enpc_lepontcurien-le-club-d%C5%93nologie-de-l%C3%A9cole-activity-7343743823220473857-wJYO/?originalSubdomain=fr">LinkedIn</a></li>
-                        <li><a href="https://www.instagram.com/epontcurien_enpc/">Instagram</a></li>
+                        <li><a href="mailto:axel.delmas@eleves.enpc.fr">axel.delmas@eleves.enpc.fr</a></li>
+                        <li><a href="tel:+33617140565">06 17 14 05 65</a></li>
+                        <li><a href="https://www.linkedin.com/posts/oenologie-enpc_lepontcurien-le-club-d%C5%93nologie-de-l%C3%A9cole-activity-7343743823220473857-wJYO/?originalSubdomain=fr" target="_blank" rel="noopener">LinkedIn</a></li>
+                        <li><a href="https://www.instagram.com/epontcurien_enpc/" target="_blank" rel="noopener">Instagram</a></li>
                     </ul>
                 </div>
-                
             </div>
-            
         </div>
     </footer>
 

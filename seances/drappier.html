@@ -15,14 +15,23 @@
 
     <header id="navbar">
         <div class="container">
-            <div class="logo">
-                <img src="../logo_enpc.png" alt="Logo" class="logo-img">
+            <a href="../index.html" class="logo" aria-label="L'Épontcurien - Accueil">
+                <img src="../logo_enpc.png" alt="" class="logo-img">
                 L'Épontcurien
-            </div>
-                <ul class="nav-links">
-                    <li><a href="../index.html">Retour à l'Accueil</a></li>
-                    <li><a href="../archives.html">Toutes les archives</a></li>
+            </a>
+            <nav aria-label="Navigation principale">
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="../planning.html">Planning 2025-2026</a></li>
+                    <li><a href="../archives.html" aria-current="page">Archives</a></li>
+                    <li><a href="../membres.html">Membres</a></li>
+                    <li><a href="../contact.html" class="btn-primary">Contact</a></li>
                 </ul>
+                <button type="button" class="hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-links">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </nav>
         </div>
     </header>
@@ -30,9 +39,8 @@
     <section class="tasting-header"
         style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://www.champagne-drappier.com/wp-content/uploads/2021/03/vignoble-drappier.jpg');">
         <div class="container">
-            <h1 style="font-size: 3.5rem; margin-bottom: 2rem;">Champagne Drappier</h1>
-            <p
-                style="font-size: 1.2rem; color: var(--secondary-color); text-transform: uppercase; letter-spacing: 2px;">
+            <h1 class="tasting-title">Champagne Drappier</h1>
+            <p class="tasting-date">
                 Novembre 2025</p>
         </div>
     </section>
@@ -75,22 +83,24 @@
                     <div class="gallery-grid">
                         <!-- Remplacez les placeholders par vos images -->
                         <div class="gallery-item">
-                            <img src="../photos/drappier1.jpg" alt="Photo de la dégustation">
+                            <img src="../photos/drappier1.jpg" alt="Photo de la dégustation - Champagne Drappier" loading="lazy">
                         </div>
                         <div class="gallery-item">
-                            <img src="../photos/drappier2.jpg" alt="Photo de la dégustation">
+                            <img src="../photos/drappier2.jpg" alt="Photo de la dégustation - Champagne Drappier" loading="lazy">
                         </div>
                         <div class="gallery-item">
-                            <img src="../photos/drappier3.jpg" alt="Photo de la dégustation">
+                            <img src="../photos/drappier3.jpg" alt="Photo de la dégustation - Champagne Drappier" loading="lazy">
                         </div>
                         <!-- Ajoutez autant de div.gallery-item que nécessaire -->
                     </div>
                 </div>
             </section>
 
-            <div style="text-align: center; margin-top: 4rem;">
+            <nav class="tasting-pager" aria-label="Autres séances">
+                <a href="laubade.html" class="pager-prev"><span class="pager-label">← Séance précédente</span><span class="pager-name">Château de Laubade</span></a>
                 <a href="../archives.html" class="btn-outline">Retourner aux archives</a>
-            </div>
+                <a href="huet.html" class="pager-next"><span class="pager-label">Séance suivante →</span><span class="pager-name">Domaine Huet</span></a>
+            </nav>
         </div>
     </section>
 
@@ -98,7 +108,6 @@
     <footer>
         <div class="container">
             <div class="footer-grid">
-
                 <div class="footer-col">
                     <h4>Liens</h4>
                     <ul>
@@ -111,19 +120,17 @@
                 <div class="footer-col">
                     <h4>Contacts et Réseaux</h4>
                     <ul>
-                        <li><a>axel.delmas@eleves.enpc.fr</a></li>
-                        <li><a>06 17 14 05 65</a></li>
-                        <li><a href="https://www.linkedin.com/posts/oenologie-enpc_lepontcurien-le-club-d%C5%93nologie-de-l%C3%A9cole-activity-7343743823220473857-wJYO/?originalSubdomain=fr">LinkedIn</a></li>
-                        <li><a href="https://www.instagram.com/epontcurien_enpc/">Instagram</a></li>
+                        <li><a href="mailto:axel.delmas@eleves.enpc.fr">axel.delmas@eleves.enpc.fr</a></li>
+                        <li><a href="tel:+33617140565">06 17 14 05 65</a></li>
+                        <li><a href="https://www.linkedin.com/posts/oenologie-enpc_lepontcurien-le-club-d%C5%93nologie-de-l%C3%A9cole-activity-7343743823220473857-wJYO/?originalSubdomain=fr" target="_blank" rel="noopener">LinkedIn</a></li>
+                        <li><a href="https://www.instagram.com/epontcurien_enpc/" target="_blank" rel="noopener">Instagram</a></li>
                     </ul>
                 </div>
-
             </div>
-
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
 </body>
 
 </html>

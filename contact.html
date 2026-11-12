@@ -15,14 +15,23 @@
 
     <header id="navbar">
         <div class="container">
-            <div class="logo">
-                <img src="logo_enpc.png" alt="Logo" class="logo-img">
+            <a href="index.html" class="logo" aria-label="L'Épontcurien - Accueil">
+                <img src="logo_enpc.png" alt="" class="logo-img">
                 L'Épontcurien
-            </div>
-                <ul class="nav-links">
-                    <li><a href="index.html">Retour à l'Accueil</a></li>
-                    
+            </a>
+            <nav aria-label="Navigation principale">
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="planning.html">Planning 2025-2026</a></li>
+                    <li><a href="archives.html">Archives</a></li>
+                    <li><a href="membres.html">Membres</a></li>
+                    <li><a href="contact.html" class="btn-primary" aria-current="page">Contact</a></li>
                 </ul>
+                <button type="button" class="hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-links">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </nav>
         </div>
     </header>
@@ -40,28 +49,28 @@
                 
             </p>
             <p>
-                <strong>06 17 14 05 65</strong> 
+                <a href="tel:+33617140565"><strong>06 17 14 05 65</strong></a>
             </p>
-            
+
             <p>
-                <strong>axel.delmas@eleves.enpc.fr </strong> 
+                <a href="mailto:axel.delmas@eleves.enpc.fr"><strong>axel.delmas@eleves.enpc.fr</strong></a>
             </p>
+
+            <p>
+                Retrouvez-nous aussi sur <a href="https://www.instagram.com/epontcurien_enpc/" target="_blank" rel="noopener">Instagram</a>
+                et <a href="https://www.linkedin.com/posts/oenologie-enpc_lepontcurien-le-club-d%C5%93nologie-de-l%C3%A9cole-activity-7343743823220473857-wJYO/?originalSubdomain=fr" target="_blank" rel="noopener">LinkedIn</a>.
+            </p>
+            </div>
         </div>
-
-            
-
-
-            
     </section>
 
 <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-grid">
-                
                 <div class="footer-col">
                     <h4>Liens</h4>
-                    ul>
+                    <ul>
                         <li><a href="index.html">Accueil</a></li>
                         <li><a href="planning.html">Planning année 2025-2026</a></li>
                         <li><a href="archives.html">Archives</a></li>
@@ -71,22 +80,17 @@
                 <div class="footer-col">
                     <h4>Contacts et Réseaux</h4>
                     <ul>
-                        <li><a>axel.delmas@eleves.enpc.fr</a></li>
-                        <li><a>06 17 14 05 65</a></li>
-                        <li><a href="https://www.linkedin.com/posts/oenologie-enpc_lepontcurien-le-club-d%C5%93nologie-de-l%C3%A9cole-activity-7343743823220473857-wJYO/?originalSubdomain=fr">LinkedIn</a></li>
-                        <li><a href="https://www.instagram.com/epontcurien_enpc/">Instagram</a></li>
+                        <li><a href="mailto:axel.delmas@eleves.enpc.fr">axel.delmas@eleves.enpc.fr</a></li>
+                        <li><a href="tel:+33617140565">06 17 14 05 65</a></li>
+                        <li><a href="https://www.linkedin.com/posts/oenologie-enpc_lepontcurien-le-club-d%C5%93nologie-de-l%C3%A9cole-activity-7343743823220473857-wJYO/?originalSubdomain=fr" target="_blank" rel="noopener">LinkedIn</a></li>
+                        <li><a href="https://www.instagram.com/epontcurien_enpc/" target="_blank" rel="noopener">Instagram</a></li>
                     </ul>
                 </div>
-                
             </div>
-            
         </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
-
-
 </body>
 
 </html>

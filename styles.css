@@ -905,25 +905,26 @@ a.pager-next:hover .pager-name {
 }
 
 .member-image {
-    height: 200px;
+    aspect-ratio: 1 / 1;
+    width: 100%;
     background-size: cover;
-    background-position: center 25%;
+    background-position: center;
 }
 
 .member-info {
-    padding: 1.5rem;
+    padding: 0.8rem 1rem 1rem;
     text-align: center;
 }
 
 .member-name {
     color: var(--text-color);
-    font-size: 1.3rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.05rem;
+    margin-bottom: 0.25rem;
 }
 
 .member-role {
     color: var(--secondary-color);
-    font-size: 0.9rem;
+    font-size: 0.72rem;
     text-transform: uppercase;
     letter-spacing: 1px;
 }

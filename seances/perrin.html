@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famille Perrin - Oenologie Ponts et Chaussées</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .tasting-header {
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo" aria-label="L'Épontcurien - Accueil">
+                <img src="../logo_enpc.png" alt="" class="logo-img">
+                L'Épontcurien
+            </a>
+            <nav aria-label="Navigation principale">
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="../planning.html">Planning 2025-2026</a></li>
+                    <li><a href="../archives.html" aria-current="page">Archives</a></li>
+                    <li><a href="../membres.html">Membres</a></li>
+                    <li><a href="../contact.html" class="btn-primary">Contact</a></li>
+                </ul>
+                <button type="button" class="hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-links">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="tasting-header">
+        <div class="container">
+            <h1 class="tasting-title">Famille Perrin</h1>
+            <p class="tasting-date">
+                Avril 2026</p>
+        </div>
+    </section>
+
+    <section class="tasting-content">
+        <div class="container tasting-intro">
+            <p class="start-quote">Famille Perrin</p>
+
+            <!-- TODO : texte placeholder à remplacer -->
+            <p>Pour cette dégustation, nous avons eu le plaisir d'accueillir [Nom du ou des intervenants], représentant(s) de Famille Perrin.</p>
+            <p>Cette soirée nous a permis de découvrir les vins de Famille Perrin (Vallée du Rhône). [Compte rendu de la séance à compléter : histoire du domaine, terroir, échanges avec les intervenants, temps forts de la soirée.]</p>
+
+            <div class="wines-list">
+                <h3>Les Vins Dégustés</h3>
+                <!-- TODO : compléter la liste des vins -->
+                <div class="wine-item">
+                    <span class="wine-name">[Vin 1]</span>
+                    <span class="wine-vintage">-</span>
+                </div>
+                <div class="wine-item">
+                    <span class="wine-name">[Vin 2]</span>
+                    <span class="wine-vintage">-</span>
+                </div>
+                <div class="wine-item">
+                    <span class="wine-name">[Vin 3]</span>
+                    <span class="wine-vintage">-</span>
+                </div>
+            </div>
+
+            <nav class="tasting-pager" aria-label="Autres séances">
+                <a href="drouhin.html" class="pager-prev"><span class="pager-label">← Séance précédente</span><span class="pager-name">Maison Joseph Drouhin</span></a>
+                <a href="../archives.html" class="btn-outline">Retourner aux archives</a>
+                <span class="pager-next" aria-hidden="true"></span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Liens</h4>
+                    <ul>
+                        <li><a href="../index.html">Accueil</a></li>
+                        <li><a href="../planning.html">Planning année 2025-2026</a></li>
+                        <li><a href="../archives.html">Archives</a></li>
+                        <li><a href="../membres.html">Les membres du Club</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contacts et Réseaux</h4>
+                    <ul>
+                        <li><a href="mailto:axel.delmas@eleves.enpc.fr">axel.delmas@eleves.enpc.fr</a></li>
+                        <li><a href="tel:+33617140565">06 17 14 05 65</a></li>
+                        <li><a href="https://www.linkedin.com/posts/oenologie-enpc_lepontcurien-le-club-d%C5%93nologie-de-l%C3%A9cole-activity-7343743823220473857-wJYO/?originalSubdomain=fr" target="_blank" rel="noopener">LinkedIn</a></li>
+                        <li><a href="https://www.instagram.com/epontcurien_enpc/" target="_blank" rel="noopener">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

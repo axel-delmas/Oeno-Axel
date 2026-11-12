@@ -11,23 +11,43 @@
         .wine-item {
             display: flex;
             justify-content: space-between;
+            align-items: center;
             padding: 1rem 0;
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
             transition: all 0.3s ease;
-            cursor: pointer;
         }
 
-        .wine-item:hover {
+        .wine-item-link {
+            display: block;
+        }
+
+        a.wine-item-link .wine-item::after {
+            content: "›";
+            color: var(--secondary-color);
+            font-size: 1.4rem;
+            line-height: 1;
+            margin-left: 1rem;
+            opacity: 0.5;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        a.wine-item-link:hover .wine-item,
+        a.wine-item-link:focus-visible .wine-item {
             background-color: rgba(191, 161, 95, 0.2);
             border-left: 4px solid var(--secondary-color);
             padding-left: 0.8rem;
+            padding-right: 0.8rem;
         }
 
-        .wine-item a {
-            display: block;
-            width: 100%;
-            text-decoration: none;
-            color: inherit;
+        a.wine-item-link:hover .wine-item::after,
+        a.wine-item-link:focus-visible .wine-item::after {
+            opacity: 1;
+            transform: translateX(4px);
+        }
+
+        .wine-item-link.is-unavailable .wine-item {
+            opacity: 0.45;
+            cursor: default;
         }
 
         .wine-name {
@@ -38,6 +58,7 @@
         .wine-vintage {
             color: #888;
             margin-left: 1rem;
+            white-space: nowrap;
         }
     </style>
 </head>
@@ -46,13 +67,24 @@
 
     <header id="navbar">
         <div class="container">
-            <div class="logo">
-                <img src="logo_enpc.png" alt="Logo" class="logo-img">
+            <a href="index.html" class="logo" aria-label="L'Épontcurien - Accueil">
+                <img src="logo_enpc.png" alt="" class="logo-img">
                 L'Épontcurien
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Retour à l'Accueil</a></li>
-            </ul>
+            </a>
+            <nav aria-label="Navigation principale">
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="planning.html">Planning 2025-2026</a></li>
+                    <li><a href="archives.html" aria-current="page">Archives</a></li>
+                    <li><a href="membres.html">Membres</a></li>
+                    <li><a href="contact.html" class="btn-primary">Contact</a></li>
+                </ul>
+                <button type="button" class="hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-links">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
         </div>
     </header>
 
@@ -61,6 +93,30 @@
             <p class="start-quote">Historique des dégustations passées</p>
 
             <div class="wines-list">
+                <a href="./seances/perrin.html" class="wine-item-link">
+                    <div class="wine-item">
+                        <span class="wine-name">Famille Perrin</span>
+                        <span class="wine-vintage">09/04/2026</span>
+                    </div>
+                </a>
+                <a href="./seances/drouhin.html" class="wine-item-link">
+                    <div class="wine-item">
+                        <span class="wine-name">Maison Joseph Drouhin</span>
+                        <span class="wine-vintage">19/03/2026</span>
+                    </div>
+                </a>
+                <a href="./seances/lafite.html" class="wine-item-link">
+                    <div class="wine-item">
+                        <span class="wine-name">Château Lafite Rothschild</span>
+                        <span class="wine-vintage">12/03/2026</span>
+                    </div>
+                </a>
+                <a href="./seances/chablisienne.html" class="wine-item-link">
+                    <div class="wine-item">
+                        <span class="wine-name">La Chablisienne</span>
+                        <span class="wine-vintage">19/02/2026</span>
+                    </div>
+                </a>
                 <a href="./seances/lagrange.html" class="wine-item-link">
                     <div class="wine-item">
                         <span class="wine-name">Château Lagrange</span>
@@ -103,12 +159,12 @@
                         <span class="wine-vintage">23/10/2025</span>
                     </div>
                 </a>
-                <a href="./seances/sucres.html" class="wine-item-link">
+                <div class="wine-item-link is-unavailable" title="Compte rendu bientôt disponible">
                     <div class="wine-item">
                         <span class="wine-name">Séance vins sucrés</span>
                         <span class="wine-vintage">16/10/2025</span>
                     </div>
-                </a>
+                </div>
                 <a href="./seances/ferrando.html" class="wine-item-link">
                     <div class="wine-item">
                         <span class="wine-name">Domaine Famille Ferrando</span>
@@ -121,16 +177,17 @@
                         <span class="wine-vintage">02/10/2025</span>
                     </div>
                 </a>
-                <a href="./seances/bordeaux.html" class="wine-item-link">
+                <div class="wine-item-link is-unavailable" title="Compte rendu bientôt disponible">
                     <div class="wine-item">
                         <span class="wine-name">École des vins de Bordeaux</span>
                         <span class="wine-vintage">25/09/2025</span>
                     </div>
-                </a>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-grid">
@@ -146,15 +203,17 @@
                 <div class="footer-col">
                     <h4>Contacts et Réseaux</h4>
                     <ul>
-                        <li><a>axel.delmas@eleves.enpc.fr</a></li>
-                        <li><a>06 17 14 05 65</a></li>
-                        <li><a href="https://www.linkedin.com/posts/oenologie-enpc_lepontcurien-le-club-d%C5%93nologie-de-l%C3%A9cole-activity-7343743823220473857-wJYO/?originalSubdomain=fr">LinkedIn</a></li>
-                        <li><a href="https://www.instagram.com/epontcurien_enpc/">Instagram</a></li>
+                        <li><a href="mailto:axel.delmas@eleves.enpc.fr">axel.delmas@eleves.enpc.fr</a></li>
+                        <li><a href="tel:+33617140565">06 17 14 05 65</a></li>
+                        <li><a href="https://www.linkedin.com/posts/oenologie-enpc_lepontcurien-le-club-d%C5%93nologie-de-l%C3%A9cole-activity-7343743823220473857-wJYO/?originalSubdomain=fr" target="_blank" rel="noopener">LinkedIn</a></li>
+                        <li><a href="https://www.instagram.com/epontcurien_enpc/" target="_blank" rel="noopener">Instagram</a></li>
                     </ul>
                 </div>
+            </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>

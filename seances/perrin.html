@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../styles.css">
     <style>
         .tasting-header {
-            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../photos/perrin1.jpg');
             background-size: cover;
             background-position: center;
             height: 60vh;
@@ -59,26 +59,55 @@
         <div class="container tasting-intro">
             <p class="start-quote">Famille Perrin</p>
 
-            <!-- TODO : texte placeholder à remplacer -->
-            <p>Pour cette dégustation, nous avons eu le plaisir d'accueillir [Nom du ou des intervenants], représentant(s) de Famille Perrin.</p>
-            <p>Cette soirée nous a permis de découvrir les vins de Famille Perrin (Vallée du Rhône). [Compte rendu de la séance à compléter : histoire du domaine, terroir, échanges avec les intervenants, temps forts de la soirée.]</p>
+            <p>Jeudi 9 avril, l'Épontcurien a eu le plaisir de voyager dans la vallée du Rhône en dégustant des produits du <a href="https://www.linkedin.com/company/ch%C3%A2teau-de-beaucastel/" target="_blank" rel="noopener">Château de Beaucastel</a>, joyau de Châteauneuf-du-Pape, ainsi que du <a href="https://www.linkedin.com/company/chateau-la-coste/" target="_blank" rel="noopener">Château La Coste</a>, domaine viticole emblématique de Provence.</p>
+            <p>Un immense merci à M. <a href="https://www.linkedin.com/in/antoine-petrus-952a7b44/" target="_blank" rel="noopener">Antoine Pétrus</a>, Meilleur Ouvrier de France en sommellerie et Président de Meilleur Ouvrier de France, de nous avoir présenté la richesse des vins de la famille Perrin. Dans une ambiance conviviale, nous avons beaucoup appris sur le terroir de cette région et les accords mets et vins.</p>
+            <p>Nous étions très honorés de vous recevoir pour cette séance, qui conclut en beauté les dégustations du mandat 027.</p>
 
             <div class="wines-list">
                 <h3>Les Vins Dégustés</h3>
-                <!-- TODO : compléter la liste des vins -->
                 <div class="wine-item">
-                    <span class="wine-name">[Vin 1]</span>
+                    <span class="wine-name">Château de Beaucastel, Châteauneuf-du-Pape Blanc</span>
                     <span class="wine-vintage">-</span>
                 </div>
                 <div class="wine-item">
-                    <span class="wine-name">[Vin 2]</span>
+                    <span class="wine-name">Château de Beaucastel, Roussanne Vieilles Vignes</span>
+                    <span class="wine-vintage">2023</span>
+                </div>
+                <div class="wine-item">
+                    <span class="wine-name">Château de Beaucastel, Châteauneuf-du-Pape Rouge</span>
+                    <span class="wine-vintage">2016</span>
+                </div>
+                <div class="wine-item">
+                    <span class="wine-name">Château de Beaucastel, Hommage à Jacques Perrin</span>
                     <span class="wine-vintage">-</span>
                 </div>
                 <div class="wine-item">
-                    <span class="wine-name">[Vin 3]</span>
+                    <span class="wine-name">Château La Coste, Rosé d'une Nuit</span>
+                    <span class="wine-vintage">-</span>
+                </div>
+                <div class="wine-item">
+                    <span class="wine-name">Château La Coste, Grand Vin Blanc</span>
+                    <span class="wine-vintage">-</span>
+                </div>
+                <div class="wine-item">
+                    <span class="wine-name">Château La Coste, Les Pentes Douces (rouge)</span>
                     <span class="wine-vintage">-</span>
                 </div>
             </div>
+
+            <section class="tasting-gallery">
+                <div class="container">
+                    <h3 style="text-align: center; margin-bottom: 2rem; color: var(--secondary-color);">Galerie Photo</h3>
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="../photos/perrin1.jpg" alt="Photo de la dégustation - Famille Perrin" loading="lazy">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="../photos/perrin2.jpeg" alt="Photo de la dégustation - Famille Perrin" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <nav class="tasting-pager" aria-label="Autres séances">
                 <a href="drouhin.html" class="pager-prev"><span class="pager-label">← Séance précédente</span><span class="pager-name">Maison Joseph Drouhin</span></a>

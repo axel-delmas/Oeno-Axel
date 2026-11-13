@@ -971,3 +971,13 @@ a.pager-next:hover .pager-name {
     font-size: 3.5rem;
     letter-spacing: 2px;
 }
+
+.tasting-intro p a {
+    color: var(--secondary-color);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.tasting-intro p a:hover {
+    color: white;
+}
